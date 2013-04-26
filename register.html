@@ -6,8 +6,58 @@
 </head>
 
 <body>
+    <audio controls="controls">
+        <source src="media/clap.wav" type="audio/wav" />
+        Unsupported audio format.
+    </audio>
+    <br/>
+    <video width="400" height="300" controls="controls">
+        <source src="media/Whale Shark sneaks up.mp4" type="video/mp4">
+            
+        Video format not supported.
+    </video>
+    <img src="media/canmap.gif" usemap="#map1">
+        <map name="map1">
+             <area shape="circle" cords="586,306,25" href="http://newfoundlandlabrador.com"/>
+             <area shape="rect" cords="179,305,233,448" href="http://gov.sk.ca"/>
+             <area shape="poly" cords="121,295,178,306,166,445,131,438,98,372" href="http://gov.ab.ca"/>
+             <area shape="default" href="http://canada.gc.ca"/>
+        </map>
+    <form method="get" action="bouncer.php">
+        Name:<input type="text" name="name" value="" /> <br />
+        Password:<input type="text" name="password" value="" /> <br />
+        Remember my information?<input type="checkbox" name="rememberMe" value="yes" checked="checked"/> <br />
+        Credit card type:<br/>
+        <input type="radio" name="cardtype" value="Visa" checked="checked"/>Visa<br/>
+        <input type="radio" name="cardtype" value="MasterCard" />Master Card <br/>
+        <input type="radio" name="cardtype" value="AmericanExpress" />American Express <br/>
+        <input type="date" name="date" value="" label="Expiration Date"/><br/>
+        Hidden: <input type="hidden" value="form1" name="formId" /> <br/>
+        Info:<textarea name="info" rows="10" cols="30">default tex</textarea> <br/>
+        
+        Vacation Destinations:
+        <select name="places" size="" multiple="multiple">
+            <option value="HW">Hawaii</option>
+            <option value="BF">Banff</option>
+            <option value="PA">Paris</option>
+            <option value="RD">Red Deer</option>
+        </select>
+        <br/>
+        <input type="submit" value="Send" />
+    </form>
 <h1> This page is under construction. Please check back soon!</h1>
+<table border="1">
+<tr>
+    <th>Heading1</th>
+    <th>Heading 2</th>
+    
+</tr>
+<tr>
+    <td>cell1</td>
+    <td>cell2</td>
+    <td>cell3</td>
+</tr>
 
-
+</table>
 </body>
 </html>

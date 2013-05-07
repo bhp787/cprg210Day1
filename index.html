@@ -3,29 +3,96 @@
 <html>
 <head>
     <title>Travel Experts</title>
+    
     <link rel="shortcut icon" href="media/Robsonbillponte-Sinem-File-Finder.ico" type="image/x-icon">
+        <style>
+            #imageDescription {
+                position: absolute;
+                top:350px;
+                left:500px;
+                color:blue;
+                font-size:20pt;
+            }
+        </style>
+    <script type="text/javascript">
+        
+        var travelImages = new Array("media/DenmarkCopenhagen.jpg","media/GoldenGateBridge.jpg",
+        "media/KyotoOsaka.jpg")
+        
+        var travelDescriptions = ["Come to Copenhagen to see historical architecture",
+        "Come explore the wonderful culture and delicious food of San Frncisco",
+        "Visit the Ancient temples of the Japanese countryside"]
+        
+        function getDescription(indexNumber)
+        {
+            document.getElementById('imageDescription').innerHTML = travelDescriptions[indexNumber];
+        }
+    </script>
 </head>
 
 <body>
-
-
-<h1><img src="images/old-truck.gif" alt= "logo" height="42">  Welcome to Travel Experts</h1>
-
-<div>
-<img src="media/DenmarkCopenhagen.jpg" alt= "Copenhagen" height="68">
-<img src="media/GoldenGateBridge.jpg" alt= "San Francisco" height="68">
-<img src="media/KyotoOsaka.jpg" alt= "Osaka" height="68">
+<div id="logo" >
+    <img src="images/old-truck.gif" alt= "logo" height="100">
+    
 </div>
-
-<div>
+<div id="header">
+    <h1>Welcome to Travel Experts</h1>
+</div>
+    
+    
+<div id="links">
     <a href= "contact.html">
         <img src="media/label_Contact_us.gif" alt= "Contact" height="68">
     </a>
     <a href= "register.html">
         <img src="media/label_agent_member_regis.gif" alt= "Register" height="68">
     </a>
+    
+</div>
+<div id="images">
+    <table>
+        <script>
+            /*
+            for (i=0; i<travelImages.length; i++)
+            {
+                document.write("<tr>");
+                document.write("<td>");
+                document.write("<img src='" + travelImages[i] + "' />");
+                document.write("</td>");
+                document.write("<td>");
+                document.write("<p style='color:blue; font-size:20pt'>" + travelDescription[i] + "</p>");
+                document.write("</td>");
+                document.write("</tr>");
+            }
+            */
+                for (i = 0; i < travelImages.length; i++)
+            {
+                document.write("<tr>");
+                document.write("<td>");
+                document.write("<img onmouseover='getDescription(" + i + ")' src='" + travelImages[i] + "' />");
+               
+                document.write("</td>");
+                document.write("</tr>");
+            }
+            
+        </script>
+    </table>
+    <div id="imageDescription"> Point to an image to see the description.</div>
+</div>
+        
+<div id="footer">
+    &copy;Copyright 2013 Property of Travel Experts Inc.
+    
+    <script>
+        /*
+        document.write("<h3>" + today.getMonthName(today.getMonth) + " " + today.getDate()
+                       + ", " + today.getFullYear() + "</h3>")
+        */
+    </script>
 </div>
 
+
+
 </body>
-<footer> &copy;Copyright 2013 Propert of Trevel Experts Inc. </footer>
+
 </html>

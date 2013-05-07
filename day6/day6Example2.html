@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <script type="text/javascript">
+        
+        var travelImages = new Array("media/DenmarkCopenhagen.jpg","media/GoldenGateBridge.jpg",
+        "media/KyotoOsaka.jpg")
+        
+        var travelDescriptions = ["Come to Copenhagen to see historical architecture",
+        "Come explore the wonderful culture and delicious food of San Frncisco",
+        "Visit the Ancient temples of the Japanese countryside"]
+        var counter = 0;
+        var timer;
+        function startSlides()
+        {
+            
+            timer = setInterval("nextSlide(++counter)", 3000);
+        }
+        
+        function nextSlide(indexNumber)
+        {
+            document.getElementById("image1").src = travelImages[indexNumber];
+            if (counter == (travelImages.length - 1))
+            {
+                counter = -1;
+            }
+            
+        }
+        
+         function stopSlides()
+        {
+            clearInterval(timer);
+        }
+    </script>
+</head>
+
+<body>
+
+<img id="image1" src="media/DenmarkCopenhagen.jpg">
+    
+    <button onclick=startSlides()>Start</button>
+    <button onclick=stopSlides()>Stop</button>
+    
+
+</body>
+</html>

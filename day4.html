@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Javascript</title>
+    <script type="text/javascript" src="js/myScript1.js"></script>
+    <script type="text/javascript" src="js/myScript2.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="styles/myStyles.css">
+    
+    <script>
+        var fontSize = 32;
+        var message = "Hello World. It is nice to see you!"
+        alert("This is in my head tag");
+    </script>
+    
+    </head>
+
+<body>
+<h1>
+    Hola, como estas mi amor?
+</h1>
+<script>
+    if (message.length > 20)
+    {
+    document.write("<p style='font-size:" + fontSize + "pt'>" + message + "</p>");
+    } else
+    {document.write("The message needs to be at least 20 characters long in order to display. Your message is" + message.length + "charactrs long.")}
+</script>
+<select name=myOption>
+    <script>
+        var optionNumber = 1;
+        while (optionNumber <= 10)
+        {
+            document.write(optionTagGenerator(optionNumber));
+            optionNumber++;
+        }
+    </script>
+</select>
+<script>
+    for(i=1; i<7; i++)
+    {
+       document.writeln( "<h" + i + ">" + message + "</h" + ">");
+    };
+</script>
+
+
+<h1>this is just after hello world</h1>
+<script>
+        alert("This is in my body tag");
+    </script>
+<h1>
+    Que tal hombre. Estoy decansado.
+</h1>
+
+</body>
+</html>

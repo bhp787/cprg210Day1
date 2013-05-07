@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Register</title>
+   </head>
+   <body>
+      <header>
+	 <h1>Please provide your information below</h1>
+      </header>
+      
+      <form method="get" action="bouncer.php">
+	     <table>
+		    <tr>
+			   <td>
+			      First Name:
+			   </td>
+			   <td>
+			      <input type="text" name="firstName" />
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      Last Name:
+			   </td>
+			   <td>
+			      <input type="text" name="lastName" />
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      Address:
+			   </td>
+			   <td>
+			      <textarea name="address"></textarea>
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      City:
+			   </td>
+			   <td>
+			      <select name="city">
+				     <option>Calgary</option>
+				     <option>Edmonton</option>
+				     <option>Red Deer</option>
+				     <option>Saskatoon</option>
+				  </select>
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      Province:
+			   </td>
+			   <td>
+			      <select name="province">
+				     <option value="AB">Alberta</option>
+				     <option value="SK">Saskatchewan</option>
+				  </select>
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      Email:
+			   </td>
+			   <td>
+			      <input type="text" name="email" />
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      Phone:
+			   </td>
+			   <td>
+			      <input type="text" name="phone" />
+			   </td>
+			</tr>
+		    <tr>
+			   <td>
+			      <input type="submit" value="Send" onclick="confirm('Would you like to continue submitting your information?')"/>
+			   </td>
+			   <td>
+			      <input type="reset" onclick="confirm('Would you like to clear all fields?')"/>
+			   </td>
+			</tr>
+		 </table>
+	  </form>
+   </body>
+</html>

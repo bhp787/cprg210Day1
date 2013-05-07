@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--Page Title that gets displayed in browser tab-->
+      <title>Travel Experts</title>
+	 <!--Adding logo to browser tab-->
+	  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon" />
+	  <!--Link to CSS file-->
+	  <link rel="stylesheet" type="text/css" href="css/travel.css" />
+	  <!--Link to JS file-->
+	  <script src="js/travel.js" type="text/javascript"> </script>
+	  <!--I would prefer to have this JS functionality in a separate window,but could not get that working correctly-->
+	  <script>
+	    window.onload = getCurrentDate();
+	  </script>
+	  
+   </head>
+   
+   <body id="index">
+      <header>
+	 <div id="logo">
+	    <img style="opacity:0.5" align="right" title="Travel Experts" src="media/GoldenGateBridge.jpg" />
+	 </div>
+	 
+	 <div id="header">
+	    <h1>Welcome to Travel Experts</h1>
+	 </div>
+      </header>
+      
+      <nav>
+	 <a href="contact.html"><img src="media/label_Contact_us.gif" /></a><br />
+	 <a href="register.html"><img src="media/label_customer_member_regis.gif" /></a><br />
+		  
+      </nav>
+      
+      <div>
+	 <p>We have a variety of travel destinations available.</p>
+	 <img src="media/DenmarkCopenhagen.jpg" /><br />
+	 <img src="media/IguassuFallsBrazilColloidConf.jpg" /><br />
+	 <img src="media/KyotoOsaka.jpg" /><br />
+	 
+      </div>
+		        
+      <footer>
+	 <h3>This page is copyrighted by Travel Experts Inc. &copy;</h3>
+	 <script> displayDashes(2);</script>
+	 <script> document.write(currentDate);</script>
+      </footer>
+      
+      
+   </body>
+</html>

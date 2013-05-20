@@ -1,0 +1,23 @@
+h1 {
+   color:green;
+   background-color:yellow;
+   font-family:arial;
+}
+
+p {
+   text-align:center;
+   color:red;
+   font-size:2em;
+}
+
+input[type="text"], textarea {
+   background-color:#bbaaaa;
+}
+
+img {
+   cursor:progress;
+}
+
+.backimage {
+   background-image:url(/media/bckgrnd1.jpg);
+}

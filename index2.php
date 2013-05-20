@@ -4,7 +4,7 @@
 ?>
 
 	  <script type="text/javascript">
-	     
+	     //var username = window.prompt("Enter your name:", "");
 		 var today = new Date();
 		 var travelImages = new Array("media/DenmarkCopenhagen.jpg",
             "media/IguassuFallsBrazilColloidConf.jpg", "media/KyotoOsaka.jpg", "media/EiffeltopParis.jpg");

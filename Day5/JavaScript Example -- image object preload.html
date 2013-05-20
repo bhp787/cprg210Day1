@@ -1,0 +1,26 @@
+<html><head><title>Images</title></head>
+<head>
+<script type='text/JavaScript'>
+var i=-1;
+function loadPicture() {
+  canada.src='images/photo' + i + '.gif';
+}
+
+</script>
+</head>
+<body>
+
+<form name='form1'>
+<input type='button' name='button1' value='  &#247;  ' onClick="i++; loadPicture();">
+
+<input type='button' name='button1' value='Click to View next picture' onClick="i++; loadPicture();">
+
+<input type='button' name='button2' value='Click to View previous picture' onClick="i--; loadPicture();">
+</form><br>
+<script type='text/javascript'>
+ document.form1.button.style.visibility="hidden";
+</script>
+
+<img src="images/canmapsm.gif" height="100" width="200" onerror='i=-1; canada.src="images/canmap.gif"' name="canada">
+
+</body></html>

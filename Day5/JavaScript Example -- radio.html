@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Radio</title>
+<script language="JavaScript">
+
+
+function newPage (form)
+   {
+   var len = form.elements.length;
+   document.form2.result.value = "The form has " + len + " items\n";
+
+   for (i=0; i<form.elements.length; i++)
+   {
+      typ = document.form1.elements[i].type;
+      document.form2.result.value = document.form2.result.value 
+	     + "The element type is " + typ + "\n"
+		 + "The element value is " + document.form1.elements[i].value + "\n"
+		 + "The element checked property is " + document.form1.elements[i].checked + "\n";
+   }
+   
+   selind = document.form1.radio1.value;
+   document.form2.result.value = document.form2.result.value + "radio button value: " + selind + "\n";
+
+   }
+
+</script>
+</head>
+
+<body bgcolor="yellow">
+<center>
+
+<form name="form1">
+<input type="radio" name="radio1" value="rad1">
+<input type="radio" name="radio1" value="rad2">
+<input type="radio" name="radio1" value="rad3">
+<input type="button" name="button" value="Go!" onClick="newPage(this.form)">
+</form>
+
+</center>
+<hr width=75%>
+
+<center>
+<form name="form2">
+<textarea name="result" rows=8 cols=60></textarea>
+</form>
+</center>
+
+</body>
+</html>

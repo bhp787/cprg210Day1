@@ -1,0 +1,24 @@
+<html>
+<head><title>Date and Time</title>
+
+<script language="JavaScript">
+
+var isnMonths=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+var isnDays= new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+today=new Date();
+
+</script>
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+document.write(today.getDay()+"<br>");
+document.write(today.getDate()+"<br>");
+
+document.write("<p><b>"+isnDays[today.getDay()]
++", "+isnMonths[today.getMonth()]+" "+today.getDate()+", "
++today.getFullYear()+"</b></p>");
+
+</script></body></html>

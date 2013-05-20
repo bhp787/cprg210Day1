@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <title>Our first page</title>
+   <script>
+      var textsize=10;
+      function grow(fontsize)
+      { 
+	      document.getElementById("growtext").innerHTML = "<p style='font-size:" + fontsize + "px'>This text grows</p>";
+      }
+   </script>
+</head>
+<body>
+
+   <div id="growtext" onclick="textsize*=2; grow(textsize)">
+      <p style="font-size:10px">This text grows</p>
+   </div>
+
+</body>
+</html>

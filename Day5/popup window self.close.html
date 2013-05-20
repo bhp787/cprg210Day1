@@ -1,0 +1,32 @@
+<html>
+<head><title>example</title>
+   <script type="text/javascript">
+      function openWindow()
+	  {
+			//myWindow.document.write("hello");//<body onclick=\"setTimeout(\\\"self.close\\\",5000)\"><h1>Hey!</h1></body>");
+			myWindow = window.open("newwin.html","","height=100,width=100,location=no,scrollbars=no,menubar=no,resizable=no,status=no");
+			myWindow = window.open("","","height=100,width=100,location=no,scrollbars=no,menubar=no,resizable=no,status=no");
+			myWindow.document.open();
+			myWindow.document.write("<html>");
+			myWindow.document.write("<head>");
+			myWindow.document.write("<title>example</title>");
+			myWindow.document.write("</head>");
+			myWindow.document.write("<body onload='setTimeout(\"self.close();\",5000);'>");
+			myWindow.document.write("<h1>Hey!</h1>");
+			myWindow.document.write("</body>");
+			myWindow.document.write("</html>");
+			myWindow.document.close();
+			
+	  }
+
+	  
+   </script>
+</head>
+
+<body bgcolor="#8080FF">
+   <script type="text/JavaScript">
+   </script>
+   <input type="button" onclick="openWindow();" value="Open New Window" />
+   <input type="button" onclick="myWindow.close();" value="Close New Window" />
+</body>
+</html>

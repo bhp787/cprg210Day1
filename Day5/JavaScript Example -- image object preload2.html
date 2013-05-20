@@ -1,0 +1,23 @@
+<html><head><title>Images</title></head>
+<head>
+<script language='JavaScript'>
+   imgarray = new Array();
+   imgarray[0] = new Image();
+   imgarray[0].src = "images/photo1.gif";
+    imgarray[1] = new Image();
+    imgarray[1].src = "images/photo2.gif";
+    imgarray[2] = new Image();
+    imgarray[2].src = "images/photo3.gif";
+</script>
+</head>
+<body>
+
+<img src="" name="img1">
+
+<form>
+<input type="button" onClick="img1.src = imgarray[0].src;">
+<input type="button" onClick="img1.src =  imgarray[1].src;">
+<input type="button" onClick="img1.src =  imgarray[2].src;">
+</form>
+
+</body></html>

@@ -1,45 +1,37 @@
-<!DOCTYPE html>
-
 <html>
-<head>
-    <title>Page Title</title>
-    <script type="text/javascript">
-        var newWindow;
-        function openWindow()
-        {
-        var myWindow = window.open('http://oracle.com', '');
-        setTimeout('newWindow.close();', 5000);
-        return myWindow;
-        }
-    </script>
-</head>
+   <head>
+      <title>Javascript</title>
+	  <script type="text/javascript">
+	     var newWin;
+		 function openWin()
+		 {
+		    newWin = open('http://oracle.com', '');
+			setTimeout("newWin.close();", 5000);
+			//return myWin;
+		 }
+	  </script>
+   </head>
+   <body>
+      <button onclick="location='http://oracle.com'" >Go To Oracle</button>
+      <img src="" alt="image" height="100" onclick="openWin();" ></img>
+	  <script>
+	     if (window.ActiveXObject)
+		 {
+		    document.write("browser is IE");
+		 }
+		 else
+		 {
+		    document.write("not IE");
+		 }
+		 document.write(navigator.appCodeName + "<br />");
+		 document.write(navigator.appName + "<br />");
+		 document.write(navigator.userAgent + "<br />");
+		 document.write(navigator.appVersion + "<br />");
+		 document.write(navigator.platform + "<br />");
+		 document.write(Math.PI + "<br />");
+		 document.write(Math.ceil(Math.random() * 20) + "<br />");
+		 
 
-<body>
-
-<button onclick="window.location='http://oracle.com'">
-    Go to Oracle
-</button>
-
-<button onclick="newWindow = openWindow()">
-    Go to Oracle
-</button>
-
-<button onclick="newWindow.close()">
-  Close New Window
-</button>
-
-<script>
-    if (window.ActiveXObject)
-    {
-        document.write("You are using Internet Explorer")
-    }
-   
-            document.write(navigator.appCodeName + "<br/>") 
-            document.write(navigator.appVersion + "<br/>")
-            document.write(navigator.platform + "<br/>")
-
-</script>
-
-
-</body>
+	  </script>
+   </body>
 </html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Image Rollover</title>
+  <script type="text/javascript">
+     function changeInner()
+	 {
+	     myDiv = document.getElementById("div1");
+		 myDiv.innerHTML = "<form method='get' action='http://hpeters.org/oosd/bouncer.php'>"
+		                + "<input type='text' name='myname'><input type='submit' value='send'>"
+						  + "</form>";
+	 }
+  
+  </script>
+
+</head>
+<body>
+
+<div style='position:absolute; z-index:3; background-color:red; visibility:hidden;' id="div1" onclick="changeInner();">
+   <h1>this is before the click</h1>
+</div>
+<div style="position:absolute; z-index:2; background-color:green; top:20px; left:30px;" id="div2" onclick="changeInner();">
+   <h1>this div is in front</h1>
+</div>
+<form>
+   <input type='button' onclick="changeInner();">
+   <input type='button' onclick="document.getElementById('div1').style.visibility = 'visible';">
+</form>
+
+</body>
+</html>

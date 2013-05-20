@@ -1,0 +1,45 @@
+#header
+{
+    position: absolute;
+    left: 500px;
+    top: 10 px;
+    
+    
+        
+    
+}
+
+#header.h1
+    {
+        
+        text-align:center;
+        color:red;
+        
+    }
+    
+#footer
+{
+    text-align:center;
+}
+
+#logo
+{
+    position: absolute;
+    left: 0px;
+    top: 0 px;
+}
+
+#links
+{
+    position: absolute;
+    left: 250;
+    top: 510 px;
+}
+
+#imageDescription {
+                position: absolute;
+                top:350px;
+                left:500px;
+                color:blue;
+                font-size:20pt;
+            }

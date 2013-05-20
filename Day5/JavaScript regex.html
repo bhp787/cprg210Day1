@@ -1,0 +1,49 @@
+<html>
+<head>
+<script language="Javascript">
+
+   function checker(email)
+   {
+     // myRegExp = new RegExp("^[A-Z0-9._%-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|biz|info|name|aero|biz|info|jobs|museum|name)$","ig");
+	  myRegExp = /^[A-Z0-9._%-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|biz|info|name|aero|biz|info|jobs|museum|name)$/ig;
+	  matched = myRegExp.test(email);
+	  if (matched)
+	  {
+	     alert("the email address is good");
+	  }
+	  else
+	  {
+	     alert("the email address has errors");
+	  }
+   }
+
+   function getAddress(textString)
+   {
+      myRegExp = /(\d{1,3}\.){3}\d{1,3}/;
+	  myArray = myRegExp.exec(textString);
+	  myString = "";
+	  for (i=0; i<myArray.length; i++)
+	  {
+	     myString += "myArray index " + i + " = " + myArray[i] + "\n";
+	  }
+	  alert(myString 
+	      + "Original string=" + RegExp.input + "\n"
+	      + "pattern=" + myRegExp.source + "\n"
+	      + "rightContext=" + RegExp.rightContext + "\n"
+	      + "leftContext=" + RegExp.leftContext + "\n");
+   }
+
+</script>
+</head>
+<body>
+  <form>
+    Enter a string containing an email address: <br />
+    <input type="text" name="email">
+    <input type="button" value="Click to check for email address" onclick="checker(email.value)">
+	
+    <input type="text" name="address">
+    <input type="button" value="Click to extract the IP address" onclick="getAddress(address.value)">
+	
+  </form>
+</body>
+</html>

@@ -1,12 +1,13 @@
 
 
 var currentDate;
+/*
 var imageArray;
 var descriptionArray;
 var linkArray;
-
+*/
 currentDate = new Date().toDateString();
-
+/*
 var onLoad = function()
     {
     
@@ -24,7 +25,7 @@ var onLoad = function()
     
     
     };
-
+*/
 function validate()
     {
        var myform = document.getElementById("form1");

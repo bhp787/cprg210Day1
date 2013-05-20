@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>Form Validation</title>
+   <script type="text/JavaScript">
+
+      function validateForm(form)
+         {
+         if (form.elements[0].value == "")
+            {
+            alert("Userid must have a value.");
+            form.elements[0].focus();
+	    return false;
+            }
+         if (form.elements[1].value == "")
+            {
+            alert("Password must have a value.");
+            form.elements[1].focus();
+	    return false;
+            }
+         return true;
+         }
+   </script>
+</head>
+<body bgcolor=red>
+<form method="post" action="mailto:hpeters@dlcwest.com" name="form1">
+   User ID: <input type="text" name="userid" value=""><br>
+   Password: <input type="password" name="password" value=""><br>
+   <input type="submit" name="submit" value="Send" onClick="return validateForm(this.form);">
+</form>
+</body>
+</html>

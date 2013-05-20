@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<title>Random</title>
+<script language="JavaScript">
+
+function urlList(a,b,c,d,e)  {
+
+this[0] = a;
+this[1] = b;
+this[2] = c;
+this[3] = d;
+this[4] = e;
+}
+
+function selectPage(list) {
+
+var today = new Date();
+var page =  today.getSeconds() % 5;
+
+window.open(list[page],"Random_Page");
+}
+
+choices = new urlList("http://www.microsoft.com/",
+		        "http://www.ppaolucci.com/",
+                                    "http://www.lycos.com/",
+                                    "http://www.ibm.com/",
+	                      "http://www.metacrawler.com/");
+	</script>
+</head>
+
+<body bgcolor=red onload = "selectPage(choices);">
+<center>
+<font face=arial size=+1> Just wait one moment, please ...
+<br>
+You will start and end with this page!
+</font>
+
+</center>
+
+</body>
+</html>

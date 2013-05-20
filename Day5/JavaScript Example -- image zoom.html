@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Image Rollover</title>
+  <script type="text/javascript">
+    var i=1;
+	
+	function zoomit()
+    {
+       i++;
+	   img1.height = i;
+       img1.width= i * 2;
+       if (i<300)
+	   {
+	     setTimeout("zoomit();",100);
+	   }
+    }
+  </script>
+
+</head>
+<body>
+<img src="images/car.gif" name="img1" height=1 width=2>
+<form>
+   <input type=button onclick="zoomit(i++);">
+</form>
+
+</body>
+</html>

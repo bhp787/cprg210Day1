@@ -1,0 +1,34 @@
+<html>
+<head><title>example</title>
+   <script type="text/JavaScript">
+   
+      myArray = new Array(1,2,3,4,5);
+	  myArray[4] = 6;
+	  myArray2 = [new Date(), new Array(), new Date(2005,11,31)];
+	  myArray3 = [1, new Array(9,8,7,6), new Date(2005,11,31)];
+	  
+   </script>
+</head>
+
+<body bgcolor="#8080FF">
+   <script type="text/JavaScript">
+      for (i=0; i<myArray.length; i++)
+	  {
+         document.write("<h" + myArray[i] + ">" + myArray[i] + "</h" + myArray[i] + ">");
+	  }
+	  document.write(myArray2[0] + "<br />");
+	  document.write(myArray2[0].getYear() + "<br />");
+	  document.write(myArray2[0].getTime() + "<br />");
+	  document.write(myArray2[2] + "<br />");
+	  document.write(myArray2[2].getYear() + "<br />");
+	  document.write(myArray2[2].getFullYear() + "<br />");
+	  document.write(myArray3.length + "<br />");
+	  document.write(myArray3[1].length + "<br />");
+	  document.write(myArray3[0].length + "<br />");
+	  
+	  
+	  x = myArray.join("/");
+	  document.write(x);
+   </script>
+</body>
+</html>

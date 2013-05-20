@@ -1,0 +1,41 @@
+<html>
+<head><title> Sample Font Colors</title></head>
+
+<body bgcolor=white>
+
+<script language="JavaScript">
+var xxx = "Your Text in here which will appear red";
+var yyy = "Your text in here which will appear blue";
+var zzz = "Your text in will here which will appear green";
+
+document.write("<center>");
+
+document.write(xxx.fontcolor("red")+"<br>");
+document.write(yyy.fontcolor("blue")+"<br>");
+document.write(zzz.fontcolor("green")+"<br>");
+document.write(zzz.substr(23, 5) + "<br>");
+document.write(zzz.length + "<br>");
+document.write(zzz.valueOf() + "<br>");
+document.write(zzz.charAt(20) + "<br>");
+document.write(zzz.charCodeAt(20) + "<br>");
+document.write(zzz.indexOf("will") + "<br>");
+document.write(zzz.lastIndexOf("will") + "<br>");
+
+zarray = zzz.split(" ");
+
+for (i=zarray.length; i>=0; i--)
+   {
+   document.write("Array position " + i + " content: " + zarray[i] + "<br>");
+   }
+
+document.write(zzz.substring(10,20) + "<br>");
+document.write(zzz.toUpperCase() + "<br>");
+document.write(zzz.toLowerCase() + "<br>");
+
+
+document.write("</center>");
+
+</script>
+
+</body>
+</html>

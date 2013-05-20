@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <title>Javascript</title>
+	  <style>
+	     #img1 {
+		    position:absolute;
+			top:0px;
+			left:1000px;
+		 }
+	  </style>
+	  <script type="text/javascript">
+	     var timer;
+		 
+		 function moveImage()
+		 {
+		    var myimage = document.getElementById("img1");
+			//alert(myimage.offsetLeft);
+			var leftPos = (myimage.offsetLeft + 5) + "px";
+			myimage.style.left = leftPos;
+			
+			var imageLeft = myimage.offsetLeft;
+			var imageWidth = myimage.width;
+			var screenWidth = window.innerWidth;
+			//alert(screenWidth);
+			if (imageWidth + imageLeft >= screenWidth)
+			{
+			   myimage.style.left = "0px"; 
+			}
+		 }
+	  </script>
+   </head>
+   <body>
+      <img id="img1" src="media/DenmarkCopenhagen.jpg"
+         onload="timer = setInterval('moveImage()', 20);" />
+   </body>
+</html>

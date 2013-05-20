@@ -1,0 +1,37 @@
+<html><head><title>URL Go</title>
+<script language="JavaScript">
+
+URL = new Array();
+
+URL[0] = "http://www.yahoo.com";
+URL[1] = "http://www.excite.com";
+URL[2] = "http://www.metacrawler.com";
+
+function newPage (form) {
+
+	Index = form.urllist.selectedIndex;
+	val1 = form.urllist.type;
+document.write("index " + Index + ", val1 " + val1);
+
+	newURL = URL[Index];
+	//location = newURL;
+}
+
+</script></head>
+
+<body bgcolor=#FAFBD5>
+<center><font face=arial size=+1>
+Click on the drop-down menu, make your selection, and then select Go!</font>
+
+<form>
+<select name="urllist">
+<option>Yahoo
+<option>Excite
+<option>Metacrawler
+</select>
+<input type="button" name="button" value="Go!" onClick="newPage(this.form)">
+</form>
+
+</center>
+<hr width=75%>
+</body></html>
